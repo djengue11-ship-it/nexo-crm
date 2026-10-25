@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Nexo CRM — gestão de clientes, agendamentos, faturas e tarefas.">
+<meta name="theme-color" content="#174f3b">
+<title>Nexo CRM — Gestão de clientes</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><span class="brand-icon">N</span><span><b>NEXO CRM</b><small>CLIENTES · FINANÇAS · AUTOMAÇÃO</small></span></div>
+  <nav id="nav">
+    <button class="nav-item active" data-page="Visão geral">▦ <span>Visão geral</span></button>
+    <button class="nav-item" data-page="Clientes">♙ <span>Clientes</span></button>
+    <button class="nav-item" data-page="Agendamentos">▦ <span>Agendamentos</span></button>
+    <button class="nav-item" data-page="Faturas">▤ <span>Faturas</span><em id="invoice-count">0</em></button>
+    <button class="nav-item" data-page="Tarefas">☑ <span>Tarefas</span></button>
+    <button class="nav-item" data-page="Automações">⟳ <span>Automações</span></button>
+  </nav>
+  <div class="sidebar-bottom"><div class="avatar">AD</div><div><b>Administrador</b><small>Espaço de trabalho</small></div></div>
+</aside>
+<main class="main">
+  <header><button id="mobile-menu" aria-label="Abrir menu">☰</button><div class="crumb">Espaço de trabalho <span>/</span> <b id="crumb-page">Visão geral</b></div><div class="header-right"><span class="status-dot"></span><span>Modo de demonstração</span></div></header>
+  <section class="content">
+    <div class="page-head"><div><p class="eyebrow" id="eyebrow">CENTRO DE CONTROLO</p><h1 id="page-title">Visão geral</h1><p class="muted" id="page-subtitle">Acompanhe o seu negócio num só lugar.</p></div><button class="btn primary" id="create-btn">＋ Criar novo</button></div>
+    <div id="notice" class="notice hidden" role="status"></div>
+    <div id="page-content"></div>
+    <footer>Nexo CRM · Protótipo local · Os dados ficam guardados neste navegador.</footer>
+  </section>
+</main>
+<div class="modal-backdrop hidden" id="modal-backdrop"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-head"><h2 id="modal-title">Criar novo</h2><button class="icon-btn" id="close-modal" aria-label="Fechar">×</button></div><form id="modal-form"><div id="modal-fields"></div><div class="modal-actions"><button type="button" class="btn secondary" id="cancel-modal">Cancelar</button><button class="btn primary" type="submit">Guardar</button></div></form></section></div>
+<script src="app.js"></script>
+</body>
+</html>
